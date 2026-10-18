@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080914">
+  <meta name="description" content="NovaDesk is your personal AI universe for learning, research, productivity, news and building projects.">
+  <title>NovaDesk — Your AI Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div id="effects" aria-hidden="true"></div>
+
+  <!-- WELCOME SCREEN -->
+  <section class="welcome" id="welcome" aria-label="Welcome to NovaDesk">
+    <div class="welcome-orb" aria-hidden="true">✦</div>
+    <p class="eyebrow welcome-kicker">YOUR PERSONAL DIGITAL UNIVERSE</p>
+    <h1>Welcome to <span>NovaDesk.</span></h1>
+    <p class="welcome-subtitle">One universe. Endless possibilities.</p>
+    <div class="loading-line" aria-hidden="true"><span></span></div>
+    <p class="loading-text">Preparing your workspace...</p>
+  </section>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="NovaDesk home">
+      <span class="brand-icon">✦</span>
+      <span>NovaDesk<span class="brand-light">.universe</span></span>
+    </a>
+
+    <div class="topbar-right">
+      <span class="status"><span class="status-dot"></span> YOUR WORKSPACE</span>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">☼</button>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- 01: AI UNIVERSE -->
+    <section class="section atomic-section reveal" id="atomic-section">
+      <div class="section-heading">
+        <p class="eyebrow">01 / YOUR AI UNIVERSE</p>
+        <h2>Everything starts <span class="gradient-text">with an idea.</span></h2>
+        <p>Your AI universe, connected in one place. Select an orbiting icon to explore a platform.</p>
+      </div>
+
+      <div class="atom-stage">
+        <div class="atom-glow"></div>
+
+        <div class="orbit orbit-outer">
+          <a class="orbit-node node-youtube" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶<small>YouTube</small></a>
+          <a class="orbit-node node-github" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">⌘<small>GitHub</small></a>
+          <a class="orbit-node node-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in<small>LinkedIn</small></a>
+          <a class="orbit-node node-x" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏<small>X</small></a>
+        </div>
+
+        <div class="orbit orbit-middle">
+          <a class="orbit-node node-gemini" href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Gemini">✦<small>Gemini</small></a>
+          <a class="orbit-node node-grok" href="https://grok.com/" target="_blank" rel="noopener noreferrer" aria-label="Grok">𝕏<small>Grok</small></a>
+          <a class="orbit-node node-deepseek" href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer" aria-label="DeepSeek">◈<small>DeepSeek</small></a>
+          <a class="orbit-node node-perplexity" href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer" aria-label="Perplexity">⌕<small>Perplexity</small></a>
+        </div>
+
+        <div class="orbit orbit-inner">
+          <a class="orbit-node node-chatgpt" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" aria-label="ChatGPT">◎<small>ChatGPT</small></a>
+          <a class="orbit-node node-claude" href="https://claude.ai/" target="_blank" rel="noopener noreferrer" aria-label="Claude">✳<small>Claude</small></a>
+          <a class="orbit-node node-notebook" href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer" aria-label="NotebookLM">▤<small>NotebookLM</small></a>
+          <a class="orbit-node node-copilot" href="https://copilot.microsoft.com/" target="_blank" rel="noopener noreferrer" aria-label="Copilot">◉<small>Copilot</small></a>
+        </div>
+
+        <div class="atom-core">
+          <div class="core-symbol">N<span>✦</span></div>
+          <strong>NovaDesk</strong>
+          <small>AI BRAIN</small>
+        </div>
+      </div>
+
+      <div class="orbit-legend">
+        <span><i class="legend-dot dot-violet"></i> CREATE</span>
+        <span><i class="legend-dot dot-cyan"></i> DISCOVER</span>
+        <span><i class="legend-dot dot-pink"></i> CONNECT</span>
+      </div>
+    </section>
+
+    <!-- 02: GOOGLE SEARCH -->
+    <section class="section search-section reveal" id="search-section">
+      <div class="section-heading">
+        <p class="eyebrow">02 / SEARCH THE WEB</p>
+        <h2>Curiosity starts <span class="gradient-text">here.</span></h2>
+        <p>Search the web for answers, inspiration, research and ideas.</p>
+      </div>
+
+      <form class="search-box" id="search-form">
+        <span class="search-symbol" aria-hidden="true">⌕</span>
+        <input id="search-input" type="search" placeholder="What do you want to discover?" aria-label="Search Google" autocomplete="off" required>
+        <button type="submit">Search ↗</button>
+      </form>
+    </section>
+
+    <!-- 03: AI TOOLS -->
+    <section class="section reveal" id="ai-section">
+      <div class="section-heading">
+        <p class="eyebrow">03 / INTELLIGENCE</p>
+        <h2>Your AI <span class="gradient-text">toolkit.</span></h2>
+        <p>Explore AI assistants for research, learning, creativity and building.</p>
+      </div>
+
+      <div class="tool-grid">
+        <a class="tool-card" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">
+          <span class="tool-icon chatgpt">◎</span>
+          <div><span class="tool-category">GENERAL AI</span><h3>ChatGPT</h3><p>Explore ideas, learn concepts, write and build.</p></div>
+          <span class="card-arrow">↗</span>
+        </a>
+
+        <a class="tool-card" href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">
+          <span class="tool-icon gemini">✦</span>
+          <div><span class="tool-category">GOOGLE AI</span><h3>Gemini</h3><p>Explore Google's AI assistant and multimodal features.</p></div>
+          <span class="card-arrow">↗</span>
+        </a>
+
+        <a class="tool-card" href="https://claude.ai/" target="_blank" rel="noopener noreferrer">
+          <span class="tool-icon claude">✳</span>
+          <div><span class="tool-category">THINKING & WRITING</span><h3>Claude</h3><p>Work through ideas, documents and coding tasks.</p></div>
+          <span class="card-arrow">↗</span>
+        </a>
+
+        <a class="tool-card" href="https://grok.com/" target="_blank" rel="noopener noreferrer">
+          <span class="tool-icon grok">𝕏</span>
+          <div><span class="tool-category">AI ASSISTANT</span><h3>Grok</h3><p>Explore questions, explanations and current topics.</p></div>
+          <span class="card-arrow">↗</span>
+        </a>
+
+        <a class="tool-card" href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer">
+          <span class="tool-icon deepseek">◈</span>
+          <div><span class="tool-category">REASONING & CODE</span><h3>DeepSeek</h3><p>Explore problem-solving, mathematics and coding.</p></div>
+          <span class="card-arrow">↗</span>
+        </a>
+
+        <a class="tool-card" href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">
+          <span class="tool-icon perplexity">⌕</span>
+          <div><span class="tool-category">AI RESEARCH</span><h3>Perplexity</h3><p>Research questions and explore cited sources.</p></div>
+          <span class="card-arrow">↗</span>
+        </a>
+
+        <a class="tool-card" href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">
+          <span class="tool-icon notebook">▤</span>
+          <div><span class="tool-category">LEARNING & NOTES</span><h3>NotebookLM</h3><p>Explore and study materials from your sources.</p></div>
+          <span class="card-arrow">↗</span>
+        </a>
+
+        <a class="tool-card" href="https://copilot.microsoft.com/" target="_blank" rel="noopener noreferrer">
+          <span class="tool-icon copilot">◉</span>
+          <div><span class="tool-category">MICROSOFT AI</span><h3>Copilot</h3><p>Get help exploring ideas and everyday tasks.</p></div>
+          <span class="card-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 04: PLATFORMS -->
+    <section class="section reveal" id="platform-section">
+      <div class="section-heading">
+        <p class="eyebrow">04 / YOUR DIGITAL WORLD</p>
+        <h2>Your favorite <span class="gradient-text">destinations.</span></h2>
+        <p>Jump into the platforms you use to learn, build and connect.</p>
+      </div>
+
+      <div class="platform-grid">
+        <a class="platform-card" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+          <span class="platform-icon youtube">▶</span>
+          <span><b>YouTube</b><small>Learn and explore</small></span><span class="card-arrow">↗</span>
+        </a>
+
+        <a class="platform-card" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <span class="platform-icon github">⌘</span>
+          <span><b>GitHub</b><small>Code and projects</small></span><span class="card-arrow">↗</span>
+        </a>
+
+        <a class="platform-card" href="https://x.com/" target="_blank" rel="noopener noreferrer">
+          <span class="platform-icon x-icon">𝕏</span>
+          <span><b>X</b><small>Share your journey</small></span><span class="card-arrow">↗</span>
+        </a>
+
+        <a class="platform-card" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <span class="platform-icon linkedin">in</span>
+          <span><b>LinkedIn</b><small>Build connections</small></span><span class="card-arrow">↗</span>
+        </a>
+
+        <a class="platform-card" href="https://news.google.com/" target="_blank" rel="noopener noreferrer">
+          <span class="platform-icon news">▤</span>
+          <span><b>Google News</b><small>Explore current events</small></span><span class="card-arrow">↗</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- 05: NEWS HUB -->
+    <section class="section reveal" id="news-section">
+      <div class="section-heading">
+        <p class="eyebrow">05 / YOUR WORLD, UPDATED</p>
+        <h2>Explore the <span class="gradient-text">latest news.</span></h2>
+        <p>Choose a topic to explore news coverage from around the world.</p>
+      </div>
+
+      <div class="news-grid">
+        <a class="news-card" href="https://news.google.com/search?q=technology+news" target="_blank" rel="noopener noreferrer">
+          <span class="news-icon">💻</span><span><b>Technology</b><small>Devices, software and innovation</small></span><span class="card-arrow">↗</span>
+        </a>
+        <a class="news-card" href="https://news.google.com/search?q=artificial+intelligence+news" target="_blank" rel="noopener noreferrer">
+          <span class="news-icon">🤖</span><span><b>Artificial Intelligence</b><small>AI models, research and breakthroughs</small></span><span class="card-arrow">↗</span>
+        </a>
+        <a class="news-card" href="https://news.google.com/search?q=business+news" target="_blank" rel="noopener noreferrer">
+          <span class="news-icon">📈</span><span><b>Business</b><small>Companies, markets and startups</small></span><span class="card-arrow">↗</span>
+        </a>
+        <a class="news-card" href="https://news.google.com/search?q=science+and+space+news" target="_blank" rel="noopener noreferrer">
+          <span class="news-icon">🔬</span><span><b>Science & Space</b><small>Discoveries, astronomy and research</small></span><span class="card-arrow">↗</span>
+        </a>
+        <a class="news-card" href="https://news.google.com/search?q=sports+news" target="_blank" rel="noopener noreferrer">
+          <span class="news-icon">🏆</span><span><b>Sports</b><small>Teams, tournaments and results</small></span><span class="card-arrow">↗</span>
+        </a>
+        <a class="news-card" href="https://news.google.com/search?q=world+news" target="_blank" rel="noopener noreferrer">
+          <span class="news-icon">🌍</span><span><b>World</b><small>International events and reports</small></span><span class="card-arrow">↗</span>
+        </a>
+        <a class="news-card" href="https://news.google.com/search?q=gaming+news" target="_blank" rel="noopener noreferrer">
+          <span class="news-icon">🎮</span><span><b>Gaming</b><small>Games, studios and releases</small></span><span class="card-arrow">↗</span>
+        </a>
+        <a class="news-card" href="https://news.google.com/search?q=health+and+lifestyle+news" target="_blank" rel="noopener noreferrer">
+          <span class="news-icon">🌱</span><span><b>Health & Lifestyle</b><small>Wellbeing, life and healthy habits</small></span><span class="card-arrow">↗</span>
+        </a>
+      </div>
+
+      <p class="news-disclaimer">↗ News links open Google News. Live headlines are not fetched directly inside NovaDesk.</p>
+    </section>
+
+    <!-- 06: PRODUCTIVITY -->
+    <section class="section reveal" id="productivity-section">
+      <div class="section-heading">
+        <p class="eyebrow">06 / FOCUS & PRODUCTIVITY</p>
+        <h2>Turn your ideas <span class="gradient-text">into action.</span></h2>
+        <p>Capture your thoughts, organize your tasks and protect your focus.</p>
+      </div>
+
+      <div class="productivity-grid">
+        <article class="panel notes-panel">
+          <div class="panel-title">
+            <span class="panel-icon">✎</span>
+            <div><h3>My Notes</h3><p>Your thoughts, saved in this browser.</p></div>
+            <span class="saved-status" id="notes-status">Ready</span>
+          </div>
+
+          <input class="field" id="note-title" type="text" maxlength="120" placeholder="Give your notes a title..." aria-label="Note title">
+          <textarea class="notes-editor" id="notes-input" placeholder="Write your ideas, plans, tasks or discoveries..." aria-label="Your notes"></textarea>
+
+          <div class="suggestion-heading"><span>QUICK STARTERS</span><span>CLICK TO INSERT · × TO REMOVE</span></div>
+          <div class="suggestion-list" id="suggestion-list"></div>
+
+          <form class="suggestion-form" id="suggestion-form">
+            <input class="field" id="suggestion-input" type="text" maxlength="60" placeholder="Add your own suggestion..." aria-label="New note suggestion">
+            <button class="small-button" type="submit" aria-label="Add suggestion">+</button>
+          </form>
+
+          <div class="panel-actions">
+            <button class="primary-button" id="save-note" type="button">Save note ✓</button>
+            <button class="secondary-button" id="clear-note" type="button">Clear note</button>
+          </div>
+        </article>
+
+        <article class="panel timer-panel">
+          <div class="panel-title">
+            <span class="panel-icon">◷</span>
+            <div><h3>Focus Timer</h3><p>One task at a time.</p></div>
+          </div>
+
+          <div class="timer-ring" id="timer-ring">
+            <div class="timer-center">
+              <strong id="timer-display">25:00</strong>
+              <span id="timer-label">READY TO FOCUS</span>
+            </div>
+          </div>
+
+          <label class="field-label" for="focus-minutes">Session duration</label>
+          <div class="duration-control">
+            <input class="field" id="focus-minutes" type="number" min="1" max="600" value="25">
+            <span>MINUTES</span>
+          </div>
+
+          <div class="timer-actions">
+            <button class="primary-button" id="start-timer" type="button">Start focus</button>
+            <button class="secondary-button" id="reset-timer" type="button">Reset</button>
+          </div>
+          <p class="focus-tip">Small focused sessions add up. Remember to take breaks.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 07: NOVA COACH -->
+    <section class="section reveal" id="robot-section">
+      <div class="section-heading">
+        <p class="eyebrow">07 / CURIOSITY & GROWTH</p>
+        <h2>Meet your little <span class="gradient-text">thinking buddy.</span></h2>
+        <p>Explore questions, reflect on your goals and find a useful next step.</p>
+      </div>
+
+      <div class="robot-layout">
+        <article class="panel robot-card">
+          <div class="robot-scene">
+            <div class="robot-shadow"></div>
+            <button class="robot" id="robot" type="button" aria-label="Make the robot jump">
+              <span class="robot-antenna"><i></i></span>
+              <span class="robot-ear ear-left"></span>
+              <span class="robot-ear ear-right"></span>
+              <span class="robot-head">
+                <span class="robot-eyes"><i></i><i></i></span>
+                <span class="robot-cheek cheek-left"></span>
+                <span class="robot-cheek cheek-right"></span>
+                <span class="robot-mouth"></span>
+              </span>
+              <span class="robot-neck"></span>
+              <span class="robot-arm arm-left"></span>
+              <span class="robot-arm arm-right"></span>
+              <span class="robot-body"><i>✦</i></span>
+              <span class="robot-foot foot-left"></span>
+              <span class="robot-foot foot-right"></span>
+            </button>
+          </div>
+
+          <span class="robot-badge"><span class="status-dot"></span> YOUR LITTLE THINKING BUDDY</span>
+          <h3>Hello, curious human! <span class="wave-emoji">👋</span></h3>
+          <p>Click me for a little jump. Then let's explore something interesting.</p>
+          <div class="robot-hint" id="robot-status" aria-live="polite">Ready when you are! ✨</div>
+
+          <div class="robot-stats">
+            <div>200<small>GROWTH QUESTIONS</small></div>
+            <div>∞<small>THINGS TO EXPLORE</small></div>
+          </div>
+        </article>
+
+        <article class="panel conversation-panel">
+          <div class="panel-title">
+            <span class="panel-icon">✧</span>
+            <div><h3>Question Explorer</h3><p>Choose a prompt to start thinking.</p></div>
+          </div>
+
+          <div class="question-header"><span>IDEAS FOR YOUR NEXT REFLECTION</span><span id="question-count">200 QUESTIONS</span></div>
+          <div class="question-list" id="question-list"></div>
+          <button class="secondary-button full-button" id="more-questions" type="button">Explore more questions ↗</button>
+
+          <div class="chat-divider"></div>
+          <div class="question-header"><span>LET'S THINK IT THROUGH</span><span class="online-label">LOCAL COACH</span></div>
+          <div class="chat-response" id="chat-response" aria-live="polite">Hey! Pick a question above or type something you'd like to talk about. Let's figure it out together. ✨</div>
+
+          <form class="chat-form" id="chat-form">
+            <input id="chat-input" type="text" maxlength="1000" placeholder="What's on your mind?" aria-label="Ask the local coach" autocomplete="off" required>
+            <button type="submit" aria-label="Send message">➤</button>
+          </form>
+
+          <div class="voice-controls">
+            <button class="secondary-button" id="speak-answer" type="button">🔊 Speak answer</button>
+            <button class="secondary-button" id="stop-speaking" type="button">■ Stop speaking</button>
+          </div>
+          <p class="voice-note">The built-in coach uses preset replies, not a connected AI model. Voice support depends on your browser.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CREATOR FINALE -->
+    <section class="closing-section reveal" id="creator-section">
+      <div class="closing-orb orb-a"></div>
+      <div class="closing-orb orb-b"></div>
+      <div class="creator-flare"></div>
+      <div class="closing-stars">✦ · ✧ · ✦</div>
+      <p class="eyebrow">EVERY GREAT UNIVERSE STARTS SOMEWHERE</p>
+      <h2>Keep exploring.<br><span class="gradient-text">Keep building.</span></h2>
+      <p class="closing-subtitle">Stay curious. Learn something. Make something useful.</p>
+      <div class="closing-line"></div>
+      <p class="creator-label">CREATED BY</p>
+      <div class="creator-name" aria-label="VIVEK">
+        <span>V</span><span>I</span><span>V</span><span>E</span><span>K</span>
+      </div>
+      <p class="creator-credit">BUILT WITH <span>AI ASSISTANCE</span></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-icon">✦</span><span>NovaDesk</span></a>
+    <span>One universe. Endless possibilities.</span>
+    <span>© <span id="current-year"></span> NovaDesk</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
